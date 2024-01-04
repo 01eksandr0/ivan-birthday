@@ -180,6 +180,43 @@ font-size: 50px;
   font-size: 50px;
 
 }
+/* four page */
+.four-page{
+  top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+    transition: all 600ms ease-in-out;
+}
+.four-page-container-img{
+height: 360px;
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background-image: linear-gradient(90deg, rgba(213, 170, 27, 1) 0%, rgba(14, 226, 177, 1) 35%, rgba(221, 65, 210, 1) 100%);
+margin-bottom: 40px;
+margin-top: 20px;
+}
+.four-page-img{
+  height: 99%;
+    width: 99%;
+}
+.four-page-text{
+  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+    background-image: linear-gradient(90deg, rgba(213, 170, 27, 1) 0%, rgba(14, 226, 177, 1) 35%, rgba(221, 65, 210, 1) 100%);
+    font-size: 30px;
+    height: auto;
+    width: auto;
+    line-height: 40px;
+}
 /* active */
 .is-opacity{
   opacity: 0;
