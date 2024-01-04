@@ -15,3 +15,20 @@ const firstPage = {
     }
 }
 firstPage.btn.addEventListener('click', firstPage.opacityPage)
+// second page
+const secondPage = {
+    pageSecond: document.querySelector('.second-page'),
+    pageThree: document.querySelector('.three-page'),
+    btn: document.querySelector('.second-page-btn'),
+    opacityPage:()=>{
+        secondPage.pageSecond.classList.add('is-opacity');
+        setTimeout(()=> {
+            secondPage.pageSecond.style.display = 'none'
+        }
+, 400);
+       setTimeout(()=>{
+         secondPage.pageThree.classList.toggle('is-opacity')
+       },500)
+    }
+}
+secondPage.btn.addEventListener('click', secondPage.opacityPage)
